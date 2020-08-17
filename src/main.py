@@ -19,7 +19,7 @@ while True:
     coronal = input_range(0, 512, "Coronal (de 0 à 512): ")
     sagittal = input_range(0, 512, "Sagital (de 0 à 512): ")
     mpr_images = slicer(axial, coronal, sagittal, images)
-    f, arr = plt.subplots(1, 3, num="MVP", figsize=(20, 10), gridspec_kw={'width_ratios': [10, 10, 10]})
+    f, arr = plt.subplots(1, 3, num="MPR", figsize=(20, 10), gridspec_kw={'width_ratios': [10, 10, 10]})
     f.tight_layout()
     show_images(arr, mpr_images, ["Axial (Slide {}):".format(axial),
                                   "Coronal (Slide {}):".format(coronal),

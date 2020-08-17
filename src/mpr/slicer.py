@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 
 
 def slicer(axial, coronal, sagittal, images):
